@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Youth Music Festival 17.10.26 | Dangar Island Community Hall</title>
+  <meta name="description" content="Youth Music Festival at Dangar Island Community Hall on 17.10.26 from 5pm. Featuring Jazz Donkeys, Rock Pigeons, The Cormorants, and The Disco Dolphins. Lamb on a spit, great music, $20 tickets!" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <div class="page-wrapper">
+    <!-- Main Poster Frame -->
+    <main class="poster-canvas" id="poster">
+      
+      <!-- Top Sunburst Header (Full Width & Animated) -->
+      <section class="sunburst-section" aria-label="Festival Header">
+        <div class="sunburst-rays"></div>
+        <div class="sunburst-overlay"></div>
+
+        <!-- Concentric Arched Text SVG: Dangar Island + Youth Music Festival -->
+        <div class="arch-banner-wrap">
+          <svg viewBox="0 0 1000 480" xmlns:xlink="http://www.w3.org/1999/xlink" class="arch-svg" aria-label="Dangar Island Youth Music Festival">
+            <defs>
+              <!-- Outer concentric circle arc for Dangar Island -->
+              <path id="dangarArc" d="M 80 480 A 420 420 0 0 1 920 480" fill="none" />
+              <!-- Inner concentric circle arc for Youth Music Festival -->
+              <path id="festivalArc" d="M 170 480 A 330 330 0 0 1 830 480" fill="none" />
+            </defs>
+            <!-- Concentric Outer: DANGAR ISLAND -->
+            <text class="arch-text-top">
+              <textPath href="#dangarArc" xlink:href="#dangarArc" startOffset="50%" text-anchor="middle">
+                DANGAR ISLAND
+              </textPath>
+            </text>
+            <!-- Concentric Inner: YOUTH MUSIC FESTIVAL -->
+            <text class="arch-text-main">
+              <textPath href="#festivalArc" xlink:href="#festivalArc" startOffset="50%" text-anchor="middle">
+                YOUTH MUSIC FESTIVAL
+              </textPath>
+            </text>
+          </svg>
+        </div>
+
+        <!-- Golden Half-Sun Vault -->
+        <div class="golden-sun-vault">
+          <div class="vault-from">from 5pm</div>
+          <div class="vault-date">17.10.26</div>
+
+          <!-- Live Countdown Component -->
+          <div class="countdown-box" id="countdown-container" aria-label="Countdown to Festival">
+            <div class="cd-unit">
+              <span class="cd-number" id="cd-days">--</span>
+              <span class="cd-label">Days</span>
+            </div>
+            <div class="cd-unit">
+              <span class="cd-number" id="cd-hours">--</span>
+              <span class="cd-label">Hours</span>
+            </div>
+            <div class="cd-unit">
+              <span class="cd-number" id="cd-minutes">--</span>
+              <span class="cd-label">Mins</span>
+            </div>
+            <div class="cd-unit">
+              <span class="cd-number" id="cd-seconds">--</span>
+              <span class="cd-label">Secs</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Middle Section: Food & Value Callout -->
+      <section class="middle-value-section" aria-label="Tickets and Highlights">
+        <div class="section-inner">
+          <h2 class="spit-roast-headline">
+            LAMB ON A SPIT! GREAT FOOD, GREAT MUSIC, GREAT VALUE!
+          </h2>
+
+          <!-- Interactive Buy Tickets Callout Banner -->
+          <div class="ticket-cta-banner">
+            <div class="ticket-banner-left">
+              <div class="ticket-banner-badge">$20 TICKETS HERE!</div>
+            </div>
+
+            <div class="ticket-banner-right">
+              <button type="button" class="btn-primary-buy btn-buy-tickets" data-tier="general">
+                <span>🎟️</span>
+                <span>BUY TICKETS NOW</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- River Wave Divider -->
+      <div class="wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0 C150,90 350,-40 500,45 C650,130 900,10 1200,50 L1200,120 L0,120 Z"></path>
+        </svg>
+      </div>
+
+      <!-- Lineup & Night Festival Section -->
+      <section class="lineup-section" aria-label="Band Lineup">
+        <h3 class="hall-presentation-title">
+          CELEBRATE WITH US A NIGHT OF YOUNG MUSICAL TALENT!
+        </h3>
+
+        <div class="featuring-label">FEATURING:</div>
+
+        <!-- 4 Band Interactive Badges -->
+        <div class="band-badges-grid">
+          
+          <!-- Band 1: Jazz Donkeys -->
+          <div class="band-card" data-band="jazz-donkeys" tabindex="0" role="button" aria-label="Play Jazz Donkeys preview">
+            <div class="band-badge-circle">
+              <img src="/assets/badge-jazz-donkeys.jpg" alt="Jazz Donkeys" class="band-badge-img" />
+            </div>
+            <div class="band-play-hint">
+              <span class="play-icon">▶</span>
+              <div class="equalizer-bars">
+                <span class="eq-bar"></span>
+                <span class="eq-bar"></span>
+                <span class="eq-bar"></span>
+              </div>
+              <span class="play-text">Jazz Groove</span>
+            </div>
+          </div>
+
+          <!-- Band 2: Rock Pigeons -->
+          <div class="band-card" data-band="rock-pigeons" tabindex="0" role="button" aria-label="Play Rock Pigeons preview">
+            <div class="band-badge-circle">
+              <img src="/assets/badge-rock-pigeons.jpg" alt="Rock Pigeons" class="band-badge-img" />
+            </div>
+            <div class="band-play-hint">
+              <span class="play-icon">▶</span>
+              <div class="equalizer-bars">
+                <span class="eq-bar"></span>
+                <span class="eq-bar"></span>
+                <span class="eq-bar"></span>
+              </div>
+              <span class="play-text">Rock Riff</span>
+            </div>
+          </div>
+
+          <!-- Band 3: The Cormorants -->
+          <div class="band-card" data-band="cormorants" tabindex="0" role="button" aria-label="Play The Cormorants preview">
+            <div class="band-badge-circle">
+              <img src="/assets/badge-cormorants.jpg" alt="The Cormorants" class="band-badge-img" />
+            </div>
+            <div class="band-play-hint">
+              <span class="play-icon">▶</span>
+              <div class="equalizer-bars">
+                <span class="eq-bar"></span>
+                <span class="eq-bar"></span>
+                <span class="eq-bar"></span>
+              </div>
+              <span class="play-text">Island Dub</span>
+            </div>
+          </div>
+
+          <!-- Band 4: The Disco Dolphins -->
+          <div class="band-card" data-band="disco-dolphins" tabindex="0" role="button" aria-label="Play The Disco Dolphins preview">
+            <div class="band-badge-circle">
+              <img src="/assets/badge-disco-dolphins.jpg" alt="The Disco Dolphins" class="band-badge-img" />
+            </div>
+            <div class="band-play-hint">
+              <span class="play-icon">▶</span>
+              <div class="equalizer-bars">
+                <span class="eq-bar"></span>
+                <span class="eq-bar"></span>
+                <span class="eq-bar"></span>
+              </div>
+              <span class="play-text">80s Synth</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Surprise Guest Easter Egg -->
+        <div class="surprise-guest-wrap">
+          <button type="button" class="surprise-guest-btn" id="surprise-guest-trigger">
+            <span>✨</span>
+            <span>& MAYBE SURPRISE GUESTS!</span>
+            <span>✨</span>
+          </button>
+          
+          <div class="surprise-reveal-box" id="surprise-reveal-content">
+            🥁 <strong>Island Grapevine Leak:</strong> Whispers say we might be joined by <em>The Hawkesbury River Siren Choir</em> and a secret headline set from local island legend <em>DJ Possum & The Cicadas</em>! Keep your ears open from 8pm!
+          </div>
+        </div>
+
+        <!-- Festival Highlights & Perks -->
+        <div class="festival-perks-section">
+          <div class="perk-card">
+            <div class="perk-icon">🍖</div>
+            <h4 class="perk-title">Lamb on a Spit Feast</h4>
+            <p class="perk-desc">
+              Slow-cooked over local red gum ironbark coals from midday. Served on crusty baker rolls with homemade mint jelly, rosemary gravy, and fresh island slaw. (Vegetarian grilled halloumi & vegan options also hot off the grill!).
+            </p>
+          </div>
+
+          <div class="perk-card">
+            <div class="perk-icon">🏡</div>
+            <h4 class="perk-title">The Historic Island Hall</h4>
+            <p class="perk-desc">
+              Nestled under the tall angophoras of Dangar Island. Wooden dance floor, all-ages friendly community atmosphere, fairy lights, and river breezes. Bring your picnic rugs!
+            </p>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="poster-footer">
+          <p>
+            Hosted by <strong>Dangar Island Community Hall</strong> • Saturday 17 October 2026 • 5:00 PM AEST
+          </p>
+          <p style="margin-top: 6px; opacity: 0.85;">
+            Lamb on a spit • Great music • Great value
+          </p>
+        </footer>
+
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Accessible Ticket Modal Dialog (Coming Soon) -->
+  <dialog id="ticket-modal" aria-labelledby="modal-title">
+    <div class="modal-header">
+      <h3 class="modal-title" id="modal-title">
+        <span>🎟️</span>
+        <span>Festival Tickets</span>
+      </h3>
+      <button type="button" class="modal-close-btn" id="close-ticket-modal" aria-label="Close dialog">✕</button>
+    </div>
+
+    <div class="modal-body" style="text-align: center; padding: 44px 24px 36px;">
+      <div style="font-size: 3.5rem; margin-bottom: 12px; line-height: 1;">🎟️</div>
+      <h2 style="font-family: var(--font-display); font-size: 2.4rem; font-weight: 800; color: var(--color-sunburst-yellow); margin-bottom: 12px; letter-spacing: 1px;">
+        Coming Soon
+      </h2>
+      <p style="color: #c9d5f5; font-size: 1.05rem; max-width: 380px; margin: 0 auto 26px; line-height: 1.55;">
+        Online ticket sales will be available soon! Check back closer to the date or follow the island grapevine for announcements.
+      </p>
+      <button type="button" class="btn-primary-buy" id="got-it-btn" style="margin: 0 auto; display: inline-flex; justify-content: center; min-width: 140px;">
+        <span>Got It!</span>
+      </button>
+    </div>
+  </dialog>
+
+  <!-- Main Entry Script -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
