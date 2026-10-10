@@ -20,8 +20,8 @@ Built to capture the spirit of classic retro community music festival posters, t
   * 🐦 **Rock Pigeons:** Overdriven rock power chord riff.
   * 🦅 **The Cormorants:** Island reggae & dub groove.
   * 🐬 **The Disco Dolphins:** 80s neon synthwave arpeggio.
-* **✨ Surprise Guest Rumor Mill:** Interactive toggle hinting at secret island guest performances.
-* **🍖 Spit Roast & Festival Perks:** Details on Hawkesbury saltbush lamb slow-cooked over red gum ironbark coals (plus grilled halloumi and vegan options).
+* **✨ Surprise Guests:** Highlights potential surprise guest performances alongside the core lineup.
+* **🍖 Lamb on a Spit & Festival Perks:** Spotlights the spit roast feast with vegetarian and vegan options available.
 * **🎟️ Ticket Dialog:** Clean, accessible "Coming Soon" modal with keyboard navigation and focus trapping.
 
 ---

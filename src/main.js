@@ -54,16 +54,5 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
-  // 4. Surprise Guest Easter Egg
-  const surpriseBtn = document.getElementById('surprise-guest-trigger');
-  const surpriseBox = document.getElementById('surprise-reveal-content');
-
-  if (surpriseBtn && surpriseBox) {
-    surpriseBtn.addEventListener('click', () => {
-      const isVisible = surpriseBox.style.display === 'block';
-      surpriseBox.style.display = isVisible ? 'none' : 'block';
-      surpriseBtn.setAttribute('aria-expanded', !isVisible);
-    });
-  }
 });
+

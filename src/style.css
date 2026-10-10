@@ -496,7 +496,7 @@ body {
   margin-top: 10px;
 }
 
-.surprise-guest-btn {
+.surprise-guest-badge {
   font-family: var(--font-display);
   font-size: clamp(1.1rem, 2.5vw, 1.45rem);
   letter-spacing: 1.5px;
@@ -505,36 +505,9 @@ body {
   border: 2px dashed rgba(248, 184, 42, 0.5);
   padding: 12px 28px;
   border-radius: 999px;
-  cursor: pointer;
-  transition: all 0.25s ease;
   display: inline-flex;
   align-items: center;
   gap: 10px;
-}
-
-.surprise-guest-btn:hover {
-  background: rgba(248, 184, 42, 0.15);
-  border-color: var(--color-sunburst-yellow);
-  transform: scale(1.04);
-}
-
-.surprise-reveal-box {
-  max-width: 580px;
-  margin: 16px auto 0;
-  padding: 16px 20px;
-  background: rgba(32, 49, 109, 0.9);
-  border-radius: 14px;
-  border: 1px solid rgba(248, 184, 42, 0.3);
-  font-size: 0.95rem;
-  color: #e5ecff;
-  line-height: 1.6;
-  display: none;
-  animation: fadeIn 0.3s ease;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-8px); }
-  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Secondary Interactive Sections */
